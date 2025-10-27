@@ -6,9 +6,9 @@ import HeroPhone from '../../../assets/images/phone1.png'
 
 const HeroSection = () => {
     return (
-        <section className='relative h-full overflow-hidden py-25 lg:py-20 bg-gradient-to-r from-background via-accent/20 to bg-primary/10'>
+        <section className='relative overflow-hidden py-25 lg:py-20 bg-gradient-to-l from-[#365dd1]/90 to-[#ffffff]'>
             <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div className="grid lg:grid-cols-2 gap-8 items-center px-6">
 
                     {/* left content */}
                     <div className="space-y-8">
@@ -21,7 +21,8 @@ const HeroSection = () => {
                             <p className="hidden sm:block text-lg text-muted-foreground leading-relaxed">
                                 Buy, sell, and trade securely with Rocoin — your trusted crypto wallet and P2P platform built for speed, safety, and simplicity.
                             </p>
-                            <div className='flex gap-3 mt-32 lg:mt-30 md:mt-80 md:ml-52 md:gap-5'>
+                            
+                            <div className='flex gap-3 mt-32 lg:mt-30 lg:ml-0 md:mt-80 md:ml-52 md:gap-5'>
                                 <Link
                                     to='https://play.google.com.store'
                                     target='_blank'
@@ -72,13 +73,13 @@ const HeroSection = () => {
                     </div>
 
                     {/* Right Image */}
-                    {/* <div className="relative "> */}
-                        <div className="absolute top-0 left-[50%] lg:top-0.5 lg:left-[45%] md:top-36 md:left-[20%] sm:top-56 overflow-hidden shadow-glow p-4 lg:-bottom-52 md:-bottom-20">
+                    <div className="relative">
+                        <div className="absolute -top-60 overflow-hidden shadow-glow ">
                             <img src={HeroPhone}
-                                className='w-3xl lg:w-[700px] md:w-[500px] h-auto object-cover sm:w-[400px]'
+                                className=' w-5xl bg-contain'
                             />
                         </div>
-                    {/* </div> */}
+                    </div>
                 </div>
             </div>
         </section>

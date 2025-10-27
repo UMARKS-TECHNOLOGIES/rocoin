@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '@/assets/images/logo3.jpg'
+import Logo from '@/assets/images/rocoinimg.png'
 import { Link } from 'react-router-dom'
 import { Button } from '../../../components/ui/button';
 
@@ -13,14 +13,13 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className='sticky top-0 bg-gradient-to-r from-background via-accent/20 to bg-primary/10 z-50'>
+        <nav className='sticky top-0 bg-gradient-to-l from-[#365dd1]/90 to-[#ffffff] z-50'>
             <div className="max-w-7xl mx-auto px-4 sm:px6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
 
                     {/* RoCoin logo */}
-
                     <div className='flex-shrink-0'>
-                        <img src={Logo} className='w-20' />
+                        <img src={Logo} className='w-30 ' />
                     </div>
 
                     {/* Desktop Navigation */}
