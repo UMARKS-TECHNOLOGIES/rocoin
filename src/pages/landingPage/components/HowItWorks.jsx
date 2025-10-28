@@ -6,7 +6,7 @@ const HowItWorks = () => {
         <section className='overflow-hidden bg-[#ffffff]'>
             <div className="max-w-7xl mx-auto py-8">
                 <div className="grid lg:grid-cols-2 gap-4 px-8 ">
-                    <div className='px-10'>
+                    <div className='px-20'>
                         <img src={PhoneImage} loading='lazy' className='w-80' />
                     </div>
                     <div className="px-2 py-28">
