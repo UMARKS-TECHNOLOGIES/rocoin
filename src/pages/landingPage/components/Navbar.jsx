@@ -2,10 +2,13 @@ import React from 'react'
 import Logo from '@/assets/images/logo3-transparent.png'
 import { Link } from 'react-router-dom'
 import { Button } from '../../../components/ui/button';
-
+import { useState } from 'react';
 
 const Navbar = () => {
-    // const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleMenu = () => setIsOpen(!isOpen);
+    const closeMenu = () => setIsOpen(false);
 
     const navItems = [
         { name: "About Us", href: "/" },
@@ -13,13 +16,11 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className='sticky top-0 bg-gradient-to-br from-purple-50 via-white to-[#c3c3dc] z-50'>
-            <div className="max-w-7xl mx-auto px-4 md:px-8">
-                <div className="flex justify-between items-center h-16">
-
+        <nav className='fixed w-full top-0 z-50 bg-gradient-to-br from-purple-50 via-white to-[#c3c3dc]'>
+            <div className="max-w-7xl mx-auto md:px-8 px-4 flex justify-between items-center">
                     {/* RoCoin logo */}
-                    <div className='flex-shrink-0'>
-                        <img src={Logo} className='w-40 ' />
+                    <div className='shrink-0'>
+                        <img src={Logo} className='w-35 md:w-40' />
                     </div>
 
                     {/* Desktop Navigation */}
@@ -50,12 +51,27 @@ const Navbar = () => {
                                     Contact Us
 
                                 </Button>
-
                             </Link>
                         </div>
                     </div>
 
-                </div>
+
+                {/* Hamburger Icon (Mobile) */}
+                <button
+                    onClick={toggleMenu}
+                    className="md:hidden focus:outline-none text-[#010066]"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="w-6 h-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                    >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
         </nav>
     )

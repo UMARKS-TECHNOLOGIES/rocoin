@@ -7,23 +7,23 @@ import PlayStoreLogo from '../../../assets/images/playstore-logo-transparent.png
 
 const HeroSection = () => {
     return (
-        <section className='relative  py-25 lg:py-20 bg-gradient-to-tr from-purple-50 via-white to-[#c3c3dc]'>
-            <div className="max-w-7xl mx-auto px-4 ">
-                <div className="grid grid-cols-2 gap-4 items-center px-6">
+        <section className='relative py-20 md:py-25 bg-gradient-to-tr from-purple-50 via-white to-[#c3c3dc] md:mt-5 mt-10'>
+            <div className="max-w-7xl mx-auto px-0.5 md:px-4">
+                <div className="grid md:grid-cols-2 gap-4 items-center px-6">
 
                     {/* left content */}
-                    <div className="py-4 w-2xl ">
-                        <div className="space-y-4">
-                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight capitalize">
+                    {/* <div className="py-4 w-2xl "> */}
+                        <div className="space-y-2 md:space-y-4 md:w-2xl">
+                            <h1 className="text-3xl md:text-5xl font-bold leading-tight capitalize">
                                 secure {" "}
-                                <span className='text-[#010066] bg-clip-text  font-bold'>P2P Crypto Trading {" "}</span>
+                                <span className='text-[#010066] bg-clip-text font-bold'>P2P Crypto Trading {" "}</span>
                                 Made Simple
                             </h1>
                             <p className="hidden md:block text-lg font-medium text-muted-foreground leading-relaxed">
                                 Buy, sell, and trade securely with Rocoin — your trusted crypto wallet and P2P platform built for speed, safety, and simplicity.
                             </p>
                             
-                            <div className='flex gap-3 mt-32 lg:mt-30 lg:ml-0 md:mt-80 md:ml-52 md:gap-5'>
+                            <div className='flex gap-2 mt-60 md:mt-35 md:gap-5'>
                                 <Link
                                     to='https://play.google.com.store'
                                     target='_blank'
@@ -32,11 +32,11 @@ const HeroSection = () => {
                                     <Button
                                         variant='hero'
                                         size='xl'
-                                        className='flex items-center gap-3 shadow-lg bg-[#010066] text-white hover:bg-[#00004d] transition-all duration-300 cursor-pointer font-medium text-sm px-4 rounded-md'>
-                                        <img src={PlayStoreLogo} alt="" className='w-8 '/>
+                                    className='flex items-center gap-2 shadow-lg bg-[#010066] text-white hover:bg-[#00004d] transition-all duration-300 cursor-pointer font-medium text-xs md:text-sm px-7 md:px-4 rounded-md py-1'>
+                                        <img src={PlayStoreLogo} alt="" className='w-8'/>
                                         <div className="text-left leading-tight">
-                                            <p className="text-sm text-gray-300">Get it on</p>
-                                            <p className="text-base font-semibold">Google Play</p>
+                                        <p className="text-xs md:text-sm text-gray-300">Get it on</p>
+                                        <p className="text-sm md:text-base font-semibold">Google Play</p>
                                         </div>
 
                                     </Button>
@@ -51,11 +51,11 @@ const HeroSection = () => {
                                     <Button
                                         variant='hero'
                                         size='xl'
-                                        className='flex items-center gap-3 shadow-lg bg-[#010066] text-white hover:bg-[#00004d] transition-all duration-300 cursor-pointer font-medium text-sm px-4 rounded-md'>
+                                        className='flex items-center gap-2 shadow-lg bg-[#010066] text-white hover:bg-[#00004d] transition-all duration-300 cursor-pointer font-medium text-xs md:text-sm px-7 md:px-4 rounded-md py-1'>
                                         <img src={Apple} alt="" className='w-8 ' />
                                         <div className="text-left leading-tight">
-                                            <p className="text-sm text-gray-300">Get it on</p>
-                                            <p className="text-base font-semibold">Google Play</p>
+                                            <p className="text-xs md:text-sm text-gray-300">Get it on</p>
+                                            <p className="text-sm md:text-base font-semibold">Google Play</p>
                                         </div>
 
                                     </Button>
@@ -63,14 +63,14 @@ const HeroSection = () => {
                                 </Link>
                             </div>
 
-                        </div>
+                        {/* </div> */}
                     </div>
 
                     {/* Right Image */}
                     <div className="relative">
-                        <div className="absolute -top-60 overflow-hidden shadow-glow ">
+                        <div className="absolute -top-75 md:-top-60 overflow-hidden shadow-glow ">
                             <img src={HeroPhone}
-                                className=' w-3xl bg-contain'
+                                className=' w-5xl bg-contain md:w-3xl'
                             />
                         </div>
                     </div>
