@@ -12,20 +12,20 @@ import PlayStoreLogo from '../../../assets/images/playstore-logo-transparent.png
 
 const Footer = () => {
     return (
-        <>
-            <section className="bg-[#010066] pb-30 pt20">
+        <div className='mt-5'>
+            <section className="bg-[#010066] pb-30">
                 <div className="max-w-7xl mx-auto py-2 px-4">
                     <div className=" grid grid-cols-2">
-                        <div className="relative px-4">
-                            <img src={WhitePhone} alt="" className="absolute w-45 " />
-                            <img src={BlackPhone} alt="" className="absolute w-45 left-50 top-15" />
+                        <div className="relative px-5">
+                            <img src={WhitePhone} alt="" className="absolute w-35 " />
+                            <img src={BlackPhone} alt="" className="absolute w-35 left-38 top-15" />
                         </div>
-                        <div className="max-w-2xl px-20 mt-20 py-5">
+                        <div className="max-w-2xl px-10 mt-20 py-2">
                             <h2 className=" text-2xl font-bold text-[#ffffff]">Start Your Crypto Journey With Rocoin</h2>
                             <p className="text-[#ffffff] text-sm font-bold">
                                 Buy, sell, and manage your digital assets with ease. Rocoin gives you the power to own your crypto — safely, securely, and instantly.
                             </p>
-                            <div className='flex gap-3 mt-10'>
+                            <div className='flex gap-3 mt-5'>
                                 <Link
                                     to='https://play.google.com.store'
                                     target='_blank'
@@ -67,10 +67,11 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
+
             <section className="bg-[#010066] border-t border-[#34333380] ">
                 <div className="border-t-2 border-[#34333380] max-w-7xl mx-auto flex px-10 gap-50">
                     <div className="">
-                        <img src={Logo} alt="" className="w-60" />
+                        <img src={Logo} alt="" className="w-45" />
                         <p className="mb-5 leading-relaxed text-sm font-medium text-[#ffffff]">© 2025 Rocoin. All rights reserved.</p>
                     </div>
                     <div className="flex flex-col items-center justify-center py-15">
@@ -89,7 +90,7 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     )
 }
 
