@@ -7,7 +7,7 @@ import PlayStoreLogo from '../../../assets/images/playstore-logo-transparent.png
 
 const HeroSection = () => {
     return (
-        <section className='relative py-20 md:py-25 bg-gradient-to-tr from-purple-50 via-white to-[#c3c3dc] md:mt-5 mt-10'>
+        <section className='relative py-20 md:py-25 bg-gradient-to-tr from-purple-50 via-white to-[#8b8bfa] md:mt-5 mt-10'>
             <div className="max-w-7xl mx-auto px-0.5 md:px-4">
                 <div className="grid md:grid-cols-2 gap-4 items-center px-6">
 

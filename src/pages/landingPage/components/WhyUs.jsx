@@ -6,7 +6,7 @@ import GoldCheck from '../../../assets/images/gold-tick.png'
 
 const WhyUs = () => {
   return (
-    <section className='relative py-10 px-0 bg-gradient-to-r overflow-hidden from-background via-accent to bg-primary/20 lg:px-20 md:px-10 sm:px-2'>
+    <section className='relative py-10 px-0 bg-gradient-to-r overflow-hidden from-background via-accent to bg-primary/20 lg:px-20 md:px-10 sm:px-2' id='whyrocoin'>
       <div className="max-w-7xl  mx-auto md:px-8">
         <div className="px-5 bg-center font-bold rounded-lg overflow-hidden " style={{
           backgroundImage: `url(${BackgroundImage})`

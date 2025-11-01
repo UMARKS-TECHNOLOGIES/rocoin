@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 
 const Home = () => {
   return (
-    <div className='min-h-screen bg-background overflow-hidden'>
+    <div className='min-h-screen bg-background overflow-hidden font-poppins'>
         <Navbar />
         <HeroSection />
         <AboutUs />
