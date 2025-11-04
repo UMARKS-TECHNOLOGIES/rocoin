@@ -20,7 +20,7 @@ const HeroSection = () => {
                     {/* left content */}
                     {/* <div className="py-4 w-2xl "> */}
                         <div className="space-y-2 md:space-y-4 md:w-2xl">
-                            <h1 className="text-3xl text-[#343333] md:text-6xl font-extrabold leading-tight">
+                            <h1 className="text-3xl text-[#343333] md:text-5xl font-extrabold leading-tight">
                                 secure {" "}
                                 <span className='text-[#010066] bg-clip-text font-extrabold'>p2p crypto trading {" "}</span>
                                 made simple...
