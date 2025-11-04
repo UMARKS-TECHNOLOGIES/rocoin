@@ -118,8 +118,8 @@ const Navbar = () => {
                     </div>
 
                     <ul className="flex flex-col text-center space-y-6 py-10 bg-[#ffffff] text-gray-800 font-medium px-6 ">
-                        <li><a href="/" onClick={closeMenu} className="hover:text-blue-600">About Us</a></li>
-                        <li><a href="#whyrocoin" onClick={closeMenu} className="hover:text-blue-600">Why Rocoin</a></li>
+                        <li><a href="/" onClick={closeMenu} className="hover:text-blue-600 text-[#343333]">About Us</a></li>
+                        <li><a href="#whyrocoin" onClick={closeMenu} className="hover:text-blue-600 text-[#343333]">Why Rocoin</a></li>
                         <div className="">
                             <Link to={'/'}>
                                 <Button

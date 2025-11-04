@@ -19,7 +19,7 @@ const WhyUs = () => {
             <div className="grid md:grid-cols-3 gap-8 md:my-10 my-5 ">
               <div className="bg-white px-6 py-6 rounded-lg md:mt-2 flex flex-col items-center justify-center">
                 <img src={KeyImage} alt="" className='md:w-30 md:h-30 w-20 h-20' />
-                <h3 className='text-center bg-clip-text text-muuted-foreground md:text-2xl text-lg font-bold capitalize leading-tight my-4'>Secure Escrow</h3>
+                <h3 className='text-center bg-clip-text text-muuted-foreground md:text-2xl text-lg font-bold capitalize leading-tight my-4 text-[#343333]'>Secure Escrow</h3>
                 <p className='bg-clip-text text-muted-foreground md:text-sm text-xs leading-relaxed md:font-medium font-bold'>
                   Secure Escrow
                   Fast Transaction
@@ -29,14 +29,14 @@ const WhyUs = () => {
               </div>
               <div className="bg-white px-6 py-6 rounded-lg md:mt-2 flex flex-col items-center justify-center">
                 <img src={ThunderImage} alt="" className='md:w-30 md:h-30 w-20 h-20' />
-                <h3 className='text-center bg-clip-text text-muuted-foreground md:text-2xl text-lg font-bold capitalize leading-tight my-4'>fast transaction</h3>
+                <h3 className='text-center bg-clip-text text-muuted-foreground md:text-2xl text-lg font-bold capitalize leading-tight my-4 text-[#343333]'>fast transaction</h3>
                 <p className='bg-clip-text text-muted-foreground md:text-sm text-xs leading-relaxed md:font-medium font-bold'>
                   Enjoy lightning-fast deposits, withdrawals, and swaps — no unnecessary delays.
                 </p>
               </div>
               <div className="bg-white px-6 py-6 rounded-lg md:mt-3 flex flex-col items-center justify-center">
                 <img src={GoldCheck} alt="" className='md:w-30 md:h-30 w-20 h-20' />
-                <h3 className='text-center bg-clip-text text-muuted-foreground md:text-2xl text-lg font-bold capitalize leading-tight my-4'>trusted and Compliant</h3>
+                <h3 className='text-center bg-clip-text text-muuted-foreground md:text-2xl text-lg font-bold capitalize leading-tight my-4 text-[#343333]'>trusted and Compliant</h3>
                 <p className='bg-clip-text text-muted-foreground md:text-sm text-xs leading-relaxed md:font-medium font-bold'>
                   Verified with government-issued ID to keep our platform safe, transparent, and compliant.
                 </p>

@@ -49,7 +49,7 @@ const OurFeatures = () => {
     return (
         <section className='bg-[#ffffff] md:py-25 py-0'>
             <div className="max-w-7xl py-4 mx-auto px-4">
-                <h2 className='font-bold md:text-2xl text-lg capitalize'>Powerful Features Built for You</h2>
+                <h2 className='font-bold md:text-2xl text-lg capitalize text-[#343333]'>Powerful Features Built for You</h2>
 
 
                 {/* Mobile slider */}
@@ -68,7 +68,7 @@ const OurFeatures = () => {
                             <SwiperSlide key={index}>
                                 <div className="bg-[#9BF7F71A] rounded-2xl py-6 px-4 flex flex-col items-center text-center hover:shadow-md transition-all duration-300 my-4">
                                     <span className="text-5xl text-primary">{feature.icon}</span>
-                                    <h2 className="font-semibold text-lg mt-3">
+                                    <h2 className="font-semibold text-lg mt-3 text-[#343333]">
                                         {feature.title}
                                     </h2>
                                     <p className="text-sm text-gray-600 md:leading-relaxed leading-tight mt-2 ">

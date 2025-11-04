@@ -26,7 +26,7 @@ const Footer = React.forwardRef((_, ref) => {
                             <p className="text-[#ffffff] md:text-sm text-xs font-medium text-center md:text-start">
                                 Buy, sell, and manage your digital assets with ease. Rocoin gives you the power to own your crypto — safely, securely, and instantly.
                             </p>
-                            {/* <div className='flex gap-3 mt-10'>
+                            <div className='flex gap-3 mt-10'>
                                 <Link
                                     to='https://play.google.com.store'
                                     target='_blank'
@@ -61,7 +61,7 @@ const Footer = React.forwardRef((_, ref) => {
                                     </Button>
 
                                 </Link>
-                            </div> */}
+                            </div>
                         </div>
 
                     </div>
