@@ -2,9 +2,9 @@ import React from 'react'
 import Home from './pages/landingPage/Home'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import "@fontsource/inter/600"
-import "@fontsource/inter/500"
-import "@fontsource/inter/400"
+import "@fontsource/poppins/600"
+import "@fontsource/poppins/500"
+import "@fontsource/poppins/400"
 
 
 const App = () => {
