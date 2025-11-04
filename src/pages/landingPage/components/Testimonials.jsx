@@ -33,7 +33,7 @@ const Testimonials = () => {
         <h2 className="font-bold mt-8 md:px-16 px-2 md:text-2xl text-lg ">Trusted By Thousands of users</h2>
 
         {/* mobile slider */}
-        <div className="block lg:hidden mt-8">
+        <div className="block lg:hidden mt-8 px-2">
           <Swiper
             modules={[Pagination]}
             spaceBetween={20}

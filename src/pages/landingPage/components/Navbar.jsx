@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Logo from '@/assets/images/logo3-transparent.png'
 import { Link } from 'react-router-dom'
 import { Button } from '../../../components/ui/button';
@@ -6,8 +6,30 @@ import { useState } from 'react';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [isAtFooter, setIsAtFooter] = useState(false);
+
     const toggleMenu = () => setIsOpen(!isOpen);
     const closeMenu = () => setIsOpen(false);
+
+
+    useEffect(() => {
+        const footer = document.getElementById("footer"); // 👈 your footer ID
+
+        if (!footer) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    setIsAtFooter(entry.isIntersecting);
+                });
+            },
+            { threshold: 0.2 }
+        );
+
+        observer.observe(footer);
+        return () => observer.disconnect();
+    }, []);
+
 
     const navItems = [
         { name: "About Us", href: "#whyrocoin" },
@@ -16,8 +38,9 @@ const Navbar = () => {
 
     return (
         <nav 
-         className='fixed w-full top-0 z-50 bg-transparent backdrop-blur-lg'>
-            <div className="max-w-7xl mx-auto md:px-8 px-4 flex justify-between items-center">
+ className={`fixed w-full top-0 z-50 backdrop-blur-lg transition-colors duration-500 ${
+        isAtFooter ? 'bg-white text-[#010066]' : 'bg-transparent text-[#343333]'
+      }`}>            <div className="max-w-7xl mx-auto md:px-8 px-4 flex justify-between items-center">
                     {/* RoCoin logo */}
                     <div className='shrink-0'>
                         <img src={Logo} className='w-35 md:w-40' />
@@ -94,7 +117,7 @@ const Navbar = () => {
                         </button>
                     </div>
 
-                    <ul className="flex flex-col text-center space-y-6 py-6 bg-[#ffffff] text-gray-800 font-medium px-6 ">
+                    <ul className="flex flex-col text-center space-y-6 py-10 bg-[#ffffff] text-gray-800 font-medium px-6 ">
                         <li><a href="/" onClick={closeMenu} className="hover:text-blue-600">About Us</a></li>
                         <li><a href="#whyrocoin" onClick={closeMenu} className="hover:text-blue-600">Why Rocoin</a></li>
                         <div className="">

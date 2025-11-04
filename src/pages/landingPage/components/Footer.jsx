@@ -1,4 +1,5 @@
 import React from 'react'
+import { useRef, useEffect } from "react";
 import { Button } from '../../../components/ui/button'
 import { Link } from 'react-router-dom'
 import Apple from '../../../assets/images/applepng-transparent.png'
@@ -8,11 +9,11 @@ import { RiInstagramLine, RiTwitterXLine } from 'react-icons/ri'
 import { CiLinkedin } from 'react-icons/ci'
 import Logo from '../../../assets/images/rocoinimg.png'
 import PlayStoreLogo from '../../../assets/images/playstore-logo-transparent.png'
+// import { useRef } from 'react';
 
-
-const Footer = () => {
+const Footer = React.forwardRef((_, ref) => {
     return (
-        <section className='mt-5'>
+        <footer ref={ref} className='mt-5' id='footer'>
             <section className="bg-[#010066] md:pb-30 pb-5">
                 <div className="max-w-7xl mx-auto py-2 md:px-4 px-2">
                     <div className=" grid md:grid-cols-2 relative">
@@ -22,7 +23,7 @@ const Footer = () => {
                         </div>
                         <div className="max-w-2xl md:px-10 px-0.5 md:mt-20 mt-80 py-2">
                             <h2 className=" md:text-2xl text-lg font-bold text-[#ffffff] text-center md:text-start ">Start Your Crypto Journey With Rocoin</h2>
-                            <p className="text-[#ffffff] md:text-sm text-xs font-medium text-center">
+                            <p className="text-[#ffffff] md:text-sm text-xs font-medium text-center md:text-start">
                                 Buy, sell, and manage your digital assets with ease. Rocoin gives you the power to own your crypto — safely, securely, and instantly.
                             </p>
                             {/* <div className='flex gap-3 mt-10'>
@@ -85,14 +86,16 @@ const Footer = () => {
                         <CiLinkedin className='text-[#ffffff] font-bold text-2xl mx-2.5 hover:text-accent' />
                         <RiInstagramLine className='text-[#ffffff] font-bold text-2xl mx-2.5 hover:text-accent' />
                         </div>
-                        <div className="md:px-20 py-2 px-8 text-center">
+                        <div className="md:px-20 py-2 px-8 text-center md:text-start">
                             <p className="leading-relaxed text-sm font-medium text-[#ffffff]">© 2025 Rocoin. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
             </section>
-        </section>
+        </footer>
+    
     )
-}
+
+});
 
 export default Footer
