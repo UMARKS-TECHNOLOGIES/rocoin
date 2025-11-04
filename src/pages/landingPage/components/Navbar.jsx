@@ -15,7 +15,8 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className='fixed w-full top-0 z-50 bg-gradient-to-br from-purple-50 via-white to-[#8b8bfa]'>
+        <nav 
+         className='fixed w-full top-0 z-50 bg-transparent backdrop-blur-lg'>
             <div className="max-w-7xl mx-auto md:px-8 px-4 flex justify-between items-center">
                     {/* RoCoin logo */}
                     <div className='shrink-0'>
@@ -31,7 +32,7 @@ const Navbar = () => {
                                         <Link
                                             key={items.name}
                                             to={items.href}
-                                            className="text-gray-800 hover:text-white px-5 py-2 text-sm font-bold"
+                                            className="text-[#343333] hover:text-white px-5 py-2 text-sm font-medium"
                                         >
                                             {items.name}
                                         </Link>

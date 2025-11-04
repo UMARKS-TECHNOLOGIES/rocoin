@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Button } from '../../../components/ui/button'
 import Apple from '../../../assets/images/apple-logo-white-transparent.png'
@@ -7,17 +8,22 @@ import PlayStoreLogo from '../../../assets/images/playstore-logo-transparent.png
 
 const HeroSection = () => {
     return (
-        <section className='relative py-20 md:py-25 bg-gradient-to-tr from-purple-50 via-white to-[#8b8bfa] md:mt-5 mt-10'>
-            <div className="max-w-7xl mx-auto px-0.5 md:px-4">
+        <section className='relative py-20 md:py-25 bg-gradient-to-tr from-purple-50 via-white to-[#b7b7d2] md:pt-40 pt-30'>
+            <motion.div
+            variants={{
+                hidden: {opacity: 0},
+                show:{opacity: 1}
+            }}
+             className="max-w-7xl mx-auto px-0.5 md:px-4">
                 <div className="grid md:grid-cols-2 gap-4 items-center px-6">
 
                     {/* left content */}
                     {/* <div className="py-4 w-2xl "> */}
                         <div className="space-y-2 md:space-y-4 md:w-2xl">
-                            <h1 className="text-3xl md:text-5xl font-bold leading-tight capitalize">
+                            <h1 className="text-3xl text-[#343333] md:text-5xl font-bold leading-tight">
                                 secure {" "}
-                                <span className='text-[#010066] bg-clip-text font-bold'>P2P Crypto Trading {" "}</span>
-                                Made Simple
+                                <span className='text-[#010066] bg-clip-text font-bold'>p2p crypto trading {" "}</span>
+                                made simple...
                             </h1>
                             <p className="hidden md:block text-lg font-medium text-muted-foreground leading-relaxed">
                                 Buy, sell, and trade securely with Rocoin — your trusted crypto wallet and P2P platform built for speed, safety, and simplicity.
@@ -52,10 +58,10 @@ const HeroSection = () => {
                                         variant='hero'
                                         size='xl'
                                         className='flex items-center gap-2 shadow-lg bg-[#010066] text-white hover:bg-[#00004d] transition-all duration-300 cursor-pointer font-medium text-xs md:text-sm px-7 md:px-4 rounded-md py-1'>
-                                        <img src={Apple} alt="" className='w-8 ' />
+                                        <img src={Apple} alt="" className='w-8 ' loading='lazy' />
                                         <div className="text-left leading-tight">
-                                            <p className="text-xs md:text-sm text-gray-300">Get it on</p>
-                                            <p className="text-sm md:text-base font-semibold">Google Play</p>
+                                            <p className="text-xs md:text-sm text-gray-300">Download on</p>
+                                            <p className="text-sm md:text-base font-semibold">Apple Store</p>
                                         </div>
 
                                     </Button>
@@ -75,7 +81,7 @@ const HeroSection = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     )
 }

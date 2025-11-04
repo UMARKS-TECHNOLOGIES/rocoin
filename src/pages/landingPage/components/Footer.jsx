@@ -52,9 +52,9 @@ const Footer = () => {
                                     <Button
                                         variant='hero'
                                         size='lg'
-                                        className='flex items-center gap-2 md:gap-0 shadow-lg bg-[#ffffff] text-[#010066] hover:bg-secondary transition-all duration-300 cursor-pointer font-medium md:text-sm text-xs md:px-2 px-6 rounded-md py-1'>
-                                        <img src={Apple} className='md:w-20 w-20' />                           <div className="text-left leading-tight">
-                                            <p className="text-sm text-gray-400">Get it on</p>
+                                        className='flex items-center gap-1 md:gap-0 shadow-lg bg-[#ffffff] text-[#010066] hover:bg-secondary transition-all duration-300 cursor-pointer font-medium md:text-sm text-xs md:px-0.5 px-5 rounded-md py-1'>
+                                        <img src={Apple} className='md:w-18 w-16' />                           <div className="text-left leading-tight">
+                                            <p className="text-sm text-gray-400">Download On</p>
                                             <p className="text-base text-shadow-black font-semibold">Apple Store</p>
                                         </div>
                                     </Button>
@@ -68,11 +68,11 @@ const Footer = () => {
             </section>
 
             <section className="bg-[#010066] border-t border-[#34333380]">
-                <div className="border-t-2 border-[#34333380] max-w-7xl mx-auto flex flex-col md:flex-row md:px-10 px-2 md:gap-50 gap-5 ">
+                <div className="border-t-2 border-[#34333380] mx-auto flex flex-col md:flex-row md:px-10 px-2 md:gap-10 gap-5 ">
                     <div className="flex items-center justify-center">
-                        <img src={Logo} alt="" className="md:w-45 w-20" />
+                        <img src={Logo} alt="" className="md:w-30 w-20" />
                     </div>
-                    <div className="flex flex-col md:py-15 py-5">
+                    <div className="flex items-center justify-center text-center">
                         <ul className='flex flex-col md:flex-row md:gap-4 gap-2 items-stretch justify-start'>
                             <li className="px-2 font-medium text-sm text-[#ffffff] cursor-pointer">Home</li>
                             <li className="px-2 font-medium text-sm text-[#ffffff] cursor-pointer">About</li>
@@ -80,15 +80,15 @@ const Footer = () => {
                             <li className="px-2 font-medium text-sm text-[#ffffff] cursor-pointer">Privacy Policy</li>
                             <li className="px-2 font-medium text-sm text-[#ffffff] cursor-pointer">Terms</li>
                         </ul>
-                        <div className='flex md:items-center md:justify-center items-start justify-start gap-2 md:mt-8 mt-5 md:text-2xl text-lg font-medium text-[#ffffff] cursor-pointer px-2'>
-                            <RiTwitterXLine />
-                            <CiLinkedin />
-                            <RiInstagramLine />
+                        <div className='flex py-5 px-20'>
+                        <RiTwitterXLine className='text-[#ffffff] font-bold text-2xl mx-2.5 hover:text-accent' />
+                        <CiLinkedin className='text-[#ffffff] font-bold text-2xl mx-2.5 hover:text-accent' />
+                        <RiInstagramLine className='text-[#ffffff] font-bold text-2xl mx-2.5 hover:text-accent' />
+                        </div>
+                        <div className="md:px-20 py-2 px-5">
+                            <p className="leading-relaxed text-sm font-medium text-[#ffffff]">© 2025 Rocoin. All rights reserved.</p>
                         </div>
                     </div>
-                </div>
-                <div className="md:px-20 py-5 px-5">
-                    <p className="leading-relaxed text-sm font-medium text-[#ffffff]">© 2025 Rocoin. All rights reserved.</p>
                 </div>
             </section>
         </section>
