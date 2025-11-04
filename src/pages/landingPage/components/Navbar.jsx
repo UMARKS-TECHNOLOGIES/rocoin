@@ -75,7 +75,7 @@ const Navbar = () => {
 
                 {/* Mobile Drawer */}
                 <div
-                    className={`fixed top-0 right-0 h-full w-full bg-white/30 backdrop-blur-lg shadow-lg transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
+                    className={`fixed top-0 right-0 h-full w-full bg-white/90 backdrop-blur-lg shadow-lg transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"
                         } z-40`}
                 >
                     <div className="flex justify-between items-center p-4 border-b border-white/30">
