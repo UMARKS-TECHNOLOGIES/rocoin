@@ -21,8 +21,8 @@ const Footer = () => {
                             <img src={BlackPhone} alt="" className="absolute md:w-35 w-32 md:left-38 left-35 top-15" />
                         </div>
                         <div className="max-w-2xl md:px-10 px-0.5 md:mt-20 mt-80 py-2">
-                            <h2 className=" md:text-2xl text-lg font-bold text-[#ffffff]">Start Your Crypto Journey With Rocoin</h2>
-                            <p className="text-[#ffffff] md:text-sm text-xs font-medium ">
+                            <h2 className=" md:text-2xl text-lg font-bold text-[#ffffff] text-center md:text-start ">Start Your Crypto Journey With Rocoin</h2>
+                            <p className="text-[#ffffff] md:text-sm text-xs font-medium text-center">
                                 Buy, sell, and manage your digital assets with ease. Rocoin gives you the power to own your crypto — safely, securely, and instantly.
                             </p>
                             {/* <div className='flex gap-3 mt-10'>
@@ -85,7 +85,7 @@ const Footer = () => {
                         <CiLinkedin className='text-[#ffffff] font-bold text-2xl mx-2.5 hover:text-accent' />
                         <RiInstagramLine className='text-[#ffffff] font-bold text-2xl mx-2.5 hover:text-accent' />
                         </div>
-                        <div className="md:px-20 py-2 px-2">
+                        <div className="md:px-20 py-2 px-8 text-center">
                             <p className="leading-relaxed text-sm font-medium text-[#ffffff]">© 2025 Rocoin. All rights reserved.</p>
                         </div>
                     </div>
